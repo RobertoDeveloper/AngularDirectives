@@ -1,0 +1,19 @@
+<style>
+    .reportViewerIFrame {
+        overflow: hidden;
+        border: 0;
+        width: 100%;
+        height: 790px;
+    }
+</style>
+
+    <div> 
+        <!-- Directive attached to the iframe input: refreshiframe -->
+        <!-- In your controller file, set the model to true, whenever you want the iframe to tigger the new URL -->
+        <!-- The srcUrl is the model that contains the url you want your iframe to display -->
+        
+         <iframe refreshiframe refreshframe="model" 
+         ng-src="{{srcUrl}}" class="reportViewerIFrame"></iframe>
+    </div>  
+
+
